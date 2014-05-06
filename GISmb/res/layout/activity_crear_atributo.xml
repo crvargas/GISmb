@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <EditText
+	        android:id="@+id/editxt_nombreAtributo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/nombre"
+	        tools:context=".CrearAtributo"
+	        />
+    
+    <Spinner 
+        	android:id="@+id/spinner_tipos_atributos"
+	        android:layout_below="@id/editxt_nombreAtributo"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:prompt="@string/tipo"
+	        android:entries="@array/opciones_tipo_atributo"/>
+    <include 
+        layout="@layout/botones_aceptar_cancelar"
+        android:layout_below="@id/spinner_tipos_atributos"/>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/id" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="@string/nombre" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="@string/Capa" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignLeft="@+id/tv_capa"
+        />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_id"
+        android:layout_toRightOf="@+id/textView2" 
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/tv_capa"/>
+
+    <TextView
+        android:id="@+id/tv_capa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_nombre"
+        android:layout_marginLeft="20dp" />
+    <TextView 
+        android:id="@+id/tv_titulo_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_capa"
+        android:layout_centerHorizontal="true"
+        android:text="@string/atributos_figuraGeometrica"/>
+
+    <ListView 
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_titulo_lista">
+        
+    </ListView>
+</RelativeLayout>

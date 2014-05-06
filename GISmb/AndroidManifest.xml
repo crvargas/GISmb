@@ -1,0 +1,187 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cl.utalca.gismb"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="cl.utalca.gismb.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cl.utalca.gismb.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- <uses-library android:name="com.google.android.maps"/> -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDhPKYKj9WF0LE_jA78v068P_PvX02Oucs" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CapasVectoriales"
+            android:label="@string/title_activity_capas_vectoriales" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.CAPAS_VECTORIALES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListProyectos"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_list_proyectos" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.LISTA_PROYECTOS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapaGoogle"
+            android:label="@string/title_activity_mapa_google" 
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name=".CrearProyecto"
+            android:label="@string/title_activity_crear_proyecto"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.CREAR_PROYECTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CrearCapaVectorial"
+            android:label="@string/title_activity_crear_capa_vectorial" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.CREAR_CAPA_VECTORIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CrearPunto"
+            android:label="@string/title_activity_crear__punto" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.CREAR_PUNTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CrearLineaPoligono"
+            android:label="@string/title_activity_crear_figura"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.CREAR_FIGURA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListFigurasGeometricas"
+            android:label="@string/title_activity_list_figuras_geometricas" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.LIST_FIGURAS_GEOMETRICAS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CrearAtributo"
+            android:label="@string/title_activity_crear_atributo" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.CREAR_ATRIBUTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IngresarValorAtributos"
+            android:label="@string/title_activity_ingresar_valor_atributos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.INGRESAR_VALOR_ATRIBUTOS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListCapasVectoriales"
+            android:label="@string/title_activity_list_capas_vectoriales" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.LIST_CAPAS_VECTORIALES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EliminarAtributosFigura"
+            android:label="@string/title_activity_eliminar_atributos_figura"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.ELIMINAR_ATRIBUTOS_FIGURA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EstadisticasBasicas"
+            android:label="@string/title_activity_estadistica_basicas" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.ESTADISTICAS_BASICAS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ModificarAtributos"
+            android:label="@string/title_activity_modificar_atributos" >
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.MODIFICAR_ATRIBUTOS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InformacionFiguraGeometrica"
+            android:label="@string/title_activity_informacion_figura_geometrica" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="cl.utalca.gismb.INFORMACION_FIGURA_GEOMETRICA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

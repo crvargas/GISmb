@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:isScrollContainer="true">
+    
+    
+    	
+	    <EditText
+	        android:id="@+id/editxt_nombreProyecto"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/nombre"
+	        tools:context=".CrearProyecto"
+	        />
+	    
+	    <Button
+	        android:id="@+id/btn_crearCapaVectorial" 
+	        android:text="@string/crear_capa"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/editxt_nombreProyecto"
+	        android:layout_alignParentRight="true"
+	        android:onClick="onClickCrearCapa"
+	        /> 
+	        
+	    <TextView
+	        android:id="@+id/txtv_titleSubseccion"
+	        android:text="@string/capas_vectoriales_proyecto"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:textStyle="bold"
+	        android:layout_below="@id/btn_crearCapaVectorial"
+	        />
+	    <View
+	        android:id="@+id/view_linea"
+	        android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:background="@android:color/darker_gray"
+			android:layout_below="@id/txtv_titleSubseccion"/>
+	    <!-- TextView de prueba resultado actividad crear capa -->
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_below="@id/txtv_titleSubseccion"
+	        />
+	    
+   	    <include
+   	        android:id="@+id/botones_aceptar_cancelar"
+        	layout="@layout/botones_aceptar_cancelar"
+        	android:layout_below="@android:id/list"
+        />
+	      
+
+</RelativeLayout>

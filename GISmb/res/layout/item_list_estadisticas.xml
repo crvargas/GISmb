@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!-- Fila 1: Nombre atributo -->
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atributo" />
+        <TextView
+            android:id="@+id/textViewNombreAtrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre" />
+    </TableRow>
+<!-- Fila 2: Minimo -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minimo" />
+
+        <TextView
+            android:id="@+id/textViewMinimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minimo" />
+    </TableRow>
+    
+<!-- Fila 3: Maximo -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maximo" />
+
+        <TextView
+            android:id="@+id/textViewMaximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maximo" />
+
+    </TableRow>
+<!-- Fila 4: Mediana -->
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mediana" />
+
+        <TextView
+            android:id="@+id/textViewMediana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mediana" />
+
+    </TableRow>
+<!-- Fila 5: Media -->
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media" />
+
+        <TextView
+            android:id="@+id/textViewMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media" />
+
+    </TableRow>
+<!-- Fila 6: Varianza -->
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/varianza" />
+
+        <TextView
+            android:id="@+id/textViewVarianza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/varianza" />
+
+    </TableRow>
+<!-- Fila 3: Desviación Estándar -->
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desviacion_estandar" />
+
+        <TextView
+            android:id="@+id/textViewDesvEstandar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desviacion_estandar" />
+
+    </TableRow>
+<!-- Fila 8: Suma -->
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suma" />
+
+        <TextView
+            android:id="@+id/textViewSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suma" />
+
+    </TableRow>
+<!-- Fila 9: Numero de datos -->
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_de_datos" />
+
+        <TextView
+            android:id="@+id/textViewN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_de_datos" />
+
+    </TableRow>
+
+</TableLayout>

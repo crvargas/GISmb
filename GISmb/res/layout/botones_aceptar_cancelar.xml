@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/layout_botones_aceptar_cancelar"
+    android:gravity="bottom|end"
+    >
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/cancelar"
+        
+        />
+    <Button 
+        android:id="@+id/btn_aceptar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/aceptar"
+        />
+    
+    
+
+</LinearLayout>

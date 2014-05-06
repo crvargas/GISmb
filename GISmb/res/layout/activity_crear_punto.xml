@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   
+   <EditText 
+       android:id="@+id/etxt_nombre_punto"
+       android:hint="@string/nombre"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"   
+       android:inputType="text"/>
+        
+   <TextView
+        android:id="@+id/tv_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitud" 
+        android:layout_below="@+id/etxt_nombre_punto"/>
+   
+   <EditText
+        android:id="@+id/etxt_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_latitud"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned" 
+        />
+   
+    <TextView
+        android:id="@+id/tv_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/longitud"
+        android:layout_marginTop="24dp"
+        android:layout_below = "@+id/etxt_latitud"
+        />
+    
+    <EditText
+        android:id="@+id/etxt_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_longitud"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned" >
+
+    </EditText>
+
+    <include
+        layout="@layout/botones_aceptar_cancelar" 
+        />
+
+</RelativeLayout>

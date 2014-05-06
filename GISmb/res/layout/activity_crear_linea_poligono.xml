@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:isScrollContainer="true"
+    >
+
+   	<EditText 
+       android:id="@+id/etxt_nombre_figura"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/nombre"
+       /> 	
+   <LinearLayout 
+        android:id="@+id/linear_layout_latitud0"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_below="@id/etxt_nombre_figura">
+   
+	    <TextView 
+	        android:id="@+id/tv_latitud0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/latitud"
+	        android:layout_weight="3"/>
+	    
+	    <EditText 
+	        android:id="@+id/etxt_latitud0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:ems="10"
+	        android:inputType="numberDecimal|numberSigned"
+	        android:layout_weight="7"/>	    
+   </LinearLayout>
+   
+   <LinearLayout 
+   	    android:id="@+id/linear_layout_longitud0"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_below="@id/linear_layout_latitud0">
+	    
+	    <TextView 
+	        android:id="@+id/tv_longitud0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/longitud"
+	        android:layout_weight="3"
+	        />
+	    <EditText 
+	        android:id="@+id/etxt_longitud0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="numberDecimal|numberSigned"
+	        android:layout_weight="7"
+	        />
+	</LinearLayout>
+	
+	<Button 
+        android:id="@+id/btn_ok_punto_linea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+   	    android:text="@string/ok"
+   	    android:layout_below="@id/linear_layout_longitud0"/>
+	
+    <TextView 
+        android:id="@+id/tv_titulo_lista_puntos_figura"
+        android:text="@string/longitud_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_longitud0"
+        android:layout_alignParentLeft="true"
+        />
+    
+    <ListView 
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ok_punto_linea">
+    </ListView>
+    <include layout="@layout/botones_aceptar_cancelar"
+        android:layout_below="@android:id/list"/>
+
+</RelativeLayout>

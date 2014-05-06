@@ -1,0 +1,91 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Menu Capas Proyecto -->
+    <item
+        android:id="@+id/menu_mapa_capas"
+        android:title="@string/capas"
+        >
+    	<menu>
+    	    <item android:id="@+id/submenu_crearCapa"
+    	          android:title="@string/crear_capa"/>
+    	    <item android:id="@+id/submenu_modificarCapa"
+    	          android:title="@string/modificar_capa"/>
+    	    <item android:id="@+id/submenu_eliminarCapa"
+    	          android:title="@string/eliminar_capa"/>
+    	    <item android:id="@+id/submenu_ocultar_mostrar_capas"
+    	          android:title="@string/capas_visibles"/>    
+        </menu>
+    </item>
+    <item 
+        android:id="@+id/menu_mapa_gral"
+        android:title="@string/mapa"
+        android:showAsAction="always">
+    	<menu>
+    	    <item 
+    	        android:id="@+id/submenu_capas_google"
+    	        android:title="@string/capas_google"/>
+    	    <item 
+    	        android:id="@+id/submenu_guardar_posicion_actual"
+    	        android:title="@string/guardar_posicion_camara"/>
+    	    <item 
+    	        android:id="@+id/submenu_ir_a"
+    	        android:title="@string/ir_a"/>
+    	    <item
+    	        android:id="@+id/submenu_mi_localizacion"
+    	        android:title="@string/mi_localizacion"/>
+    	</menu>
+    </item>
+    <item
+        android:id="@+id/menu_establecer_capa_trabajo"
+        android:title="@string/establecer_capa_de_trabajo"
+        android:showAsAction="always"/>
+    <!-- Menu Figura Geometrica -->
+    <item 
+        android:id="@+id/menu_figura_geometrica"
+        android:title="@string/figura_geometrica">
+        <menu>
+            <item 
+                android:id="@+id/submenu_fg_crear_manual"
+                android:title="@string/nueva_figura_manual"/>
+            <item 
+                android:id="@+id/submenu_fg_clickear_mapa"
+                android:title="@string/clickear_mapa"/>
+            <item 
+                android:id="@+id/submenu_fg_obtener_posicion"
+                android:title="@string/obtener_posicion"/>  
+            <item 
+                android:id="@+id/submenu_eliminar_figuraGeometrica"
+                android:title="@string/eliminar_figura_geometrica"/> 
+                <item 
+                    android:id="@+id/submenu_modificar_figuraGeometrica"
+                    android:title="@string/modificar_figura_geometrica"/>               
+        </menu>
+     </item> 
+     <!--  
+     <item
+         android:id="@+id/menu_imagen"
+         android:title="Imagen"
+         />  
+      -->
+ 	<!-- Menu para la administración de los atributos de las figuras geometricas -->
+    <item
+         android:id="@+id/menu_mapa_atributos"
+         android:title="@string/atributos_figuraGeometrica"
+         > 
+         <menu>
+             <item android:id="@+id/submenu_atributos_crear"
+                   android:title="@string/crear_atributos"/>
+             <item android:id="@+id/submenu_atributos_eliminar"
+                   android:title="@string/eliminar_atributos"/>
+             <item android:id="@+id/submenu_ingresar_valores_atributo"
+                   android:title="@string/ingresar_valor_atributo"/>
+             <item android:id="@+id/submenu_atributos_modificar"
+                 android:title="@string/modificar_atributo"/>
+         </menu>
+    </item>
+    <item
+         android:id="@+id/menu_estadisticas"
+         android:title="@string/estadisticas_basicas"
+         />
+    <item android:id="@+id/menu_interpolacion"
+          android:title="@string/interpolacion"/>
+</menu>

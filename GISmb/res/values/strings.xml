@@ -1,0 +1,138 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">GISmb</string>
+    <string name="wellcome">Bienvenido!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_ip_servidor">Ip Servidor</string>
+    <string name="title_activity_main">GISmb</string>
+    <string name="title_activity_lista_estaciones">Estaciones</string>
+    <string name="mapa_base">Ubicar Mapa Base</string>
+    <string name="title_activity_capas_vectoriales">Capas Vectoriales</string>
+    <string name="nombre">Nombre</string>
+    <string name="crear_capa">Crear Capa</string>
+    <string name="modificar_capa">Modificar Capa</string>
+    <string name="eliminar_capa">Eliminar Capa</string>
+    <string name="crear_nuevo_proyecto">Crear nuevo proyecto</string>
+    <string name="title_activity_list_proyectos">Lista Proyectos</string>
+    <string name="creacion">Creación</string>
+    <string name="title_activity_mapa_google">MapaGoogle</string>
+    <string name="title_activity_crear_proyecto">Crear Proyecto</string>
+    <string name="guardar">Guardar</string>
+    <string name="tipo">Seleccione el Tipo</string>
+    <string name="capas_vectoriales_proyecto">Capas Vectoriales Proyecto</string>
+    <string name="atributos_capa_vectorial">Atributos Capa Vectorial</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="modificar">Modificar</string>
+    <string name="capas">Capas</string>
+    <string name="centrar_mapa">Centrar Mapa</string>
+    <string name="establecer_capa_de_trabajo">Capa de Trabajo</string>
+    <string name="seleccionar_capa">Capa de trabajo</string>
+    <string name="figura_geometrica">Figura Geometrica</string>
+    <string name="nueva_figura_manual">Crear Figura Manual</string>
+    <string name="eliminar_figura_geometrica">Eliminar Figura Geometrica</string>
+    <string name="modificar_figura_geometrica">Modificar Figura Geometrica</string>
+    <string name="clickear_mapa">Clickear Mapa</string>
+    <string name="obtener_posicion">Obtener Posición Actual </string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="ok">OK</string>
+    <string name="puntos_figura">Puntos Figura</string>
+    <string name="longitud_latitud">----(Longitud Latitud)----</string>
+    <string name="crear_linea">Crear Linea</string>
+    <string name="crear_poligono">Crear Poligono</string>
+    <string name="crear_atributos">Crear Atributos</string>
+    <string name="seleccion_accion">Seleccione la Acción</string>
+    <string name="eliminado_exito">Se elimino Exitosamente</string>
+    <string name="atributos_figuraGeometrica">Atributos Figura Geometrica</string>
+    <string name="crear_atributos">Crear Atributos</string>
+    <string name="eliminar_atributos">Eliminar Atributos</string>
+    <string name="ingresar_valor_atributo">Ingresar Valor Atributo</string>
+    <string name="alerta_falta_seleccionar_capa_de_trabajo">Debe seleccionar una capa de Trabajo Primero</string>
+    <string name="alerta">Alerta</string>
+    <string name="valor">Valor</string>
+    <string name="ingresar_nombre_figura">Ingresar Nombre Figura</string>
+    <string name="posicion">Posicion</string>
+    <string name="proyecto_no_tiene_capas">El Proyecto no tiene Capas</string>
+    <string name="capas_visibles">Capas Visibles</string>
+    <string name="mapa">Mapa</string>
+    <string name="guardar">Guardar</string>
+    <string name="salir">Salir</string>
+    <string name="normal">Normal</string>
+    <string name="hybrid">Hibrido</string>
+    <string name="satellite">Satelite</string>
+    <string name="terrain">Terreno</string>
+    <string name="capas_google">Capas Google</string>
+    <string name="guardar_posicion_camara">Guardar Posicion Camara</string>
+    <string name="ir_a">Ir a</string>
+    <string name="mi_localizacion">Mi localizacion</string>
+    <!-- terminos estadisticos que se usan -->
+    <string name="estadisticas_basicas">Estadísticas Básicas</string>
+    <string name="minimo">Minimo</string>
+    <string name="maximo">Maximo</string>
+    <string name="mediana">Mediana</string>
+    <string name="media">Media</string>
+    <string name="varianza">Varianza</string>
+    <string name="desviacion_estandar">Desv. Estandar </string>
+    <string name="suma">Suma</string>
+    <string name="numero_de_datos">n</string>
+    <string name="atributo">Atributo</string>
+    <string name="interpolacion">Interpolación</string>
+    <string name="seleccion_atributo_numerico">Selección Atributo</string>
+    <string name="modificar_atributo">Modificar Nombre Atributos</string>
+    <string name="id">ID</string>
+    <string name="Capa">Capa Vectorial</string>
+    <!-- opciones del inicio de la aplicacion -->
+    <string-array name="opciones_inicio">
+        <item>Último proyecto abierto</item>
+        <item>Ver todos los proyectos</item>
+        <item>Crear nuevo proyecto</item>
+    </string-array>
+
+    <!-- Para rellenar spinner con las opciones de layers del mapa de google (normal,hibrido,satelite y terreno -->
+    <string-array name="tipos_layers_mapa">
+        <item>@string/normal</item>
+        <item>@string/hybrid</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+    </string-array>
+    <!-- Para rellenar el spinner con las opciones de capa que existen -->
+    <string-array name="opciones_tipo_capas">
+        <item>point</item>
+        <item>linestring</item>
+        <item>polygon</item>
+    </string-array>
+
+    <!-- Para rellenar el spinner con las opciones de atributos que existen -->
+    <string-array name="opciones_tipo_atributo">
+        <item>numerico</item>
+        <item>texto</item>
+        <item>logico</item>
+    </string-array>
+
+    <!-- Para rellenar el spinner con las opciones de atributos que existen -->
+    <string-array name="opciones_eliminar_modificar">
+        <item>Modificar</item>
+        <item>Eliminar</item>
+    </string-array>
+
+    <string name="title_activity_crear_capa_vectorial">Crear capa vectorial</string>
+    <string name="title_activity_crear__punto">Crear Point</string>
+    <string name="title_activity_crear_figura">Crear Figura</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_list_figuras_geometricas">Figuras Geometricas</string>
+    <string name="title_activity_crear_atributo">Crear Atributo</string>
+    <string name="tipo_atributo_numerico">numerico</string>
+    <string name="tipo_atributo_texto">texto</string>
+    <string name="tipo_atributo_logico">logico</string>
+    <string name="title_activity_ingresar_valor_atributos">Ingresar Valor Atributos</string>
+    <string name="title_activity_list_capas_vectoriales">Capas Vectoriales</string>
+    <string name="title_activity_atributos_list_figura">Atributos List Figura</string>
+    <string name="title_activity_eliminar_atributos_figura">Eliminar Atributos Figura</string>
+    <string name="modficar_proyecto">Modificar Proyecto</string>
+    <string name="title_activity_estadistica_basicas">Estadísticas Básicas</string>
+    <string name="title_activity_modificar_atributos">ModificarAtributos</string>
+    <string name="title_activity_informacion_figura_geometrica">Informacion Figura Geometrica</string>
+    <string name="color_map_description">Barra de colores de interpolacion</string>
+
+</resources>
